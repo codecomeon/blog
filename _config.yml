@@ -82,3 +82,4 @@ deploy:
   type: git
   repository: https://github.com/codecomeon/docs.git
   branch: master
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
