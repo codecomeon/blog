@@ -13,7 +13,7 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>category: 行的的 | WPH&#39;s blog</title>
+  <title>h5页面禁止放大的实现方式 | WPH&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="wph,wengpenhui,penghui,blog,html5,css3">
@@ -21,14 +21,18 @@
   
   
   
-  <meta name="keywords" content="WPH">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WPH&#39;s blog">
-<meta property="og:url" content="https://codecomeon.github.io/docs/categories/不行/行的的/index.html">
+  <meta name="description" content="遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效123456789101112131415161718window.onload=function () &amp;#123;  document.addEventListener(&apos;touchstart&apos;,function (event) &amp;#123;    if(event.touches.">
+<meta name="keywords" content="移动端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="h5页面禁止放大的实现方式">
+<meta property="og:url" content="https://codecomeon.github.io/docs/2018/11/02/h5页面禁止放大/index.html">
 <meta property="og:site_name" content="WPH&#39;s blog">
+<meta property="og:description" content="遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效123456789101112131415161718window.onload=function () &amp;#123;  document.addEventListener(&apos;touchstart&apos;,function (event) &amp;#123;    if(event.touches.">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2018-11-02T12:36:27.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WPH&#39;s blog">
+<meta name="twitter:title" content="h5页面禁止放大的实现方式">
+<meta name="twitter:description" content="遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效123456789101112131415161718window.onload=function () &amp;#123;  document.addEventListener(&apos;touchstart&apos;,function (event) &amp;#123;    if(event.touches.">
   
     <link rel="alternate" href="/atom.xml" title="WPH&#39;s blog" type="application/atom+xml">
   
@@ -86,7 +90,7 @@ var themeMenus = {};
 </script>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   <header id="allheader" class="site-header" role="banner">
@@ -165,244 +169,102 @@ var themeMenus = {};
             
       <div id="content" class="outer">
         
-          <section id="main">
-  
-  
-  
+          <section id="main" style="float:none;"><article id="post-h5页面禁止放大" style="width: 66%; float:left;" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/docs/archives/2018" class="archive-year">2018</a></h1>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-
-      <a href="/docs/2018/10/28/hello-world/" class="archive-article-date">
-		  <time datetime="2018-10-28T09:33:38.962Z" itemprop="datePublished">10月 28, 2018</time>
-	  </a>
-      
+      <header class="article-header">
+        
   
     <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/docs/2018/10/28/hello-world/">Hello World</a>
+      h5页面禁止放大的实现方式
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/docs/2018/11/02/h5页面禁止放大/" class="article-date">
+	  <time datetime="2018-11-02T12:34:13.000Z" itemprop="datePublished">十一月 2, 2018</time>
+	</a>
+
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="遇到移动端H5页面的放大缩小不受控制，即便加了meta-userscalble-no也不能起效，下面一段可以生效"><a href="#遇到移动端H5页面的放大缩小不受控制，即便加了meta-userscalble-no也不能起效，下面一段可以生效" class="headerlink" title="遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效"></a>遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">document</span>.addEventListener(<span class="string">'touchstart'</span>,<span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(event.touches.length&gt;<span class="number">1</span>)&#123;</span><br><span class="line">      event.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">var</span> lastTouchEnd=<span class="number">0</span>;</span><br><span class="line">  <span class="built_in">document</span>.addEventListener(<span class="string">'touchend'</span>,<span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> now=(<span class="keyword">new</span> <span class="built_in">Date</span>()).getTime();</span><br><span class="line">    <span class="keyword">if</span>(now-lastTouchEnd&lt;=<span class="number">300</span>)&#123;</span><br><span class="line">      event.preventDefault();</span><br><span class="line">    &#125;</span><br><span class="line">    lastTouchEnd=now;</span><br><span class="line">  &#125;,<span class="literal">false</span>);</span><br><span class="line">  <span class="built_in">document</span>.addEventListener(<span class="string">'gesturestart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">    event.preventDefault();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/docs/categories/前端/">前端</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/docs/tags/移动端/">移动端</a></li></ul>
+
+      
+            
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/docs/2018/10/28/21415/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">21415</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
+<!-- Table of Contents -->
 
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到移动端H5页面的放大缩小不受控制，即便加了meta-userscalble-no也不能起效，下面一段可以生效"><span class="nav-number">1.</span> <span class="nav-text">遇到移动端H5页面的放大缩小不受控制，即便加了meta userscalble=no也不能起效，下面一段可以生效</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
-          <aside id="sidebar">
-  
-    <div class="widget-wrap" style="margin: 20px 0;">
-	<div id="search-form-wrap">
-
-    <form class="search-form">
-        <label style="width: 75%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" 搜索…" value="" name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="搜索">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词...">
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(无标题)',
-        },
-        ROOT_URL: '/docs/',
-        CONTENT_URL: '/docs/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/docs/js/insight.js"></script>
-
-</div>
-</div>
-  
-    
-  <div class="widget_athemes_tabs">
-    <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>最新文章</a></li>
-    </ul>
-    <div class="widget">
-      <ul>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/docs/2018/11/02/h5页面禁止放大/">h5页面禁止放大的实现方式</a></h6>
-              <span>十一月 2, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/docs/2018/10/28/21415/">21415</a></h6>
-              <span>十月 28, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/docs/2018/10/28/测试123/">测试123</a></h6>
-              <span>十月 28, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/docs/2018/10/28/123/">123</a></h6>
-              <span>十月 28, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/docs/2018/10/28/hello-world/">Hello World</a></h6>
-              <span>十月 28, 2018</span>
-            </div>
-
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/docs/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/docs/archives/2018/10/">十月 2018</a><span class="archive-list-count">4</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/docs/categories/不行/">不行</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/docs/categories/不行/行的的/">行的的</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/docs/categories/前端/">前端</a><span class="category-list-count">4</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/docs/tags/ceshi/">ceshi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/docs/tags/不可以的/">不可以的</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/docs/tags/不知道/">不知道</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/docs/tags/移动端/">移动端</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签云</h3>
-    <div class="widget tagcloud">
-      <a href="/docs/tags/ceshi/" style="font-size: 10px;">ceshi</a> <a href="/docs/tags/不可以的/" style="font-size: 10px;">不可以的</a> <a href="/docs/tags/不知道/" style="font-size: 10px;">不知道</a> <a href="/docs/tags/移动端/" style="font-size: 10px;">移动端</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">联系我</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">
-    	
-          
-     			  <li><a href="https://github.com/codecomeon" title="Github"><i class="fa fa-github" aria-hidden="true" target="_blank"></i></a></li>
-          
-   		
-          
-            <li><a href="mailto:2974769674@qq.com?subject=请联系我&body=我能帮你什么" title="email"><i class="fa fa-envelope" aria-hidden="true" target="_blank"></i></a></li>
-          
-   		
-          
-     			  <li><a href="weixin://15267053970" title="weixin"><i class="fa fa-weixin" aria-hidden="true" target="_blank"></i></a></li>
-          
-   		
-          
-     			  <li><a href="qq://2974769672" title="QQ"><i class="fa fa-qq" aria-hidden="true" target="_blank"></i></a></li>
-          
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li>
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-</aside>
         
       </div>
       <footer id="footer" class="site-footer">
